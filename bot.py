@@ -3,6 +3,10 @@ from discord.ext import commands
 import sqlite3
 from datetime import timedelta
 
+TOKEN = os.environ['TOKEN']
+
+
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.reactions = True
@@ -174,4 +178,4 @@ async def announce(ctx, *, message):
 
 
 # Run the bot
-bot.run('MTIyMjczODc2MzY4MDA1OTQyMw.GOjOgz.1JNE8ba_SfEWGN0iwJKLKtA8Di1PyktJRFwbFQ')
+bot.run(TOKEN)
